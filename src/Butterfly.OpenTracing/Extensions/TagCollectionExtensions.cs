@@ -10,6 +10,11 @@ namespace Butterfly.OpenTracing
             {
                 throw new ArgumentNullException(nameof(tagCollection));
             }
+            if (key == null)
+            {
+                throw new ArgumentNullException(nameof(key));
+            }
+
             tagCollection[key] = value;
             return tagCollection;
         }
