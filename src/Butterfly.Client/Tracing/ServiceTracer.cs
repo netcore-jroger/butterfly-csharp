@@ -42,7 +42,7 @@ namespace Butterfly.Client.Tracing
 
         public string ServiceName => _service;
 
-        public string EnvironmentName => throw new NotImplementedException();
+        public string EnvironmentName => _environmentName;
 
         public ISpan Start(ISpanBuilder spanBuilder)
         {
